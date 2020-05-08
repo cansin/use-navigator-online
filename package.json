@@ -1,6 +1,6 @@
 {
   "name": "use-navigator-online",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React Hooks to detect when your browser is online/offline.",
   "main": "index.js",
   "private": false,
