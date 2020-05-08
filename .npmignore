@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+test.js
+.babelrc
+.eslintrc.js
+.gitignore
+.travis.yml
+yarn.lock
+yarn-error.log
