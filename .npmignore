@@ -1,8 +1,8 @@
 .idea/
 node_modules/
 test.js
-.babelrc
-.eslintrc.js
+.babelrc.json
+.eslintrc.json
 .gitignore
 .travis.yml
 yarn.lock
