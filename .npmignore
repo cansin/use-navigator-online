@@ -1,9 +1,0 @@
-.idea/
-node_modules/
-test.js
-.babelrc.json
-.eslintrc.json
-.gitignore
-.travis.yml
-yarn.lock
-yarn-error.log

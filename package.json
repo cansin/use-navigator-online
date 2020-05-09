@@ -2,28 +2,7 @@
   "name": "use-navigator-online",
   "version": "1.0.0",
   "description": "React Hooks to detect when your browser is online/offline.",
-  "main": "index.js",
   "private": false,
-  "type": "module",
-  "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.0.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^4.0.0",
-    "jest": "^26.0.1",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "peerDependencies": {
-    "react": ">=16"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cansin/use-navigator-online.git"
@@ -44,8 +23,39 @@
     "url": "https://github.com/cansin/use-navigator-online/issues"
   },
   "homepage": "https://github.com/cansin/use-navigator-online#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@rollup/plugin-babel": "^5.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-rollup": "^0.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.8.2"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "scripts": {
-    "test": "eslint . && jest"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "eslint . && jest",
+    "pretest": "yarn build"
   },
   "engines": {
     "node": ">=12.16.3"

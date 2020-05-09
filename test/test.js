@@ -2,20 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { act } from "react-dom/test-utils";
 
-import useNavigatorOnline from "./index";
-
-function NavigatorTest() {
-  const { isOnline, isOffline } = useNavigatorOnline();
-
-  return (
-    <p>
-      {isOnline ? "online" : "not online"}{" "}
-      {isOffline ? "offline" : "not offline"}
-    </p>
-  );
-}
+import useNavigatorOnline from "..";
 
 describe("useNavigatorOnline", () => {
+  function NavigatorTest() {
+    const { isOnline, isOffline } = useNavigatorOnline();
+
+    return (
+      <p>
+        {isOnline ? "online" : "not online"}{" "}
+        {isOffline ? "offline" : "not offline"}
+      </p>
+    );
+  }
+
   let container;
 
   beforeEach(() => {
