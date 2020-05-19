@@ -1,9 +1,12 @@
 # use-navigator-online
+[![size](https://img.shields.io/bundlephobia/minzip/use-navigator-online)](https://bundlephobia.com/result?p=use-navigator-online)
+[![dependencies](https://img.shields.io/librariesio/release/npm/use-navigator-online)](https://libraries.io/npm/@use-navigator-online)
+[![build](https://img.shields.io/travis/com/cansin/use-navigator-online)](https://travis-ci.com/github/cansin/use-navigator-online)
+[![downloads](https://img.shields.io/npm/dm/use-navigator-online)](https://www.npmjs.com/package/use-navigator-online)
+[![license](https://img.shields.io/github/license/cansin/use-navigator-online)](https://github.com/cansin/use-navigator-online/blob/master/LICENSE)
 
 React Hooks to detect when your browser is online/offline using
 [window.navigator.onLine](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine).
-
-![size](https://img.shields.io/bundlephobia/minzip/use-navigator-online.svg) ![dependencies](https://img.shields.io/david/cansin/use-navigator-online.svg) ![build](https://img.shields.io/travis/com/cansin/use-navigator-online) ![downloads](https://img.shields.io/npm/dt/use-navigator-online) ![license](https://img.shields.io/npm/l/use-navigator-online.svg)
 
 ## Install
 

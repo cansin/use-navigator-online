@@ -43,7 +43,7 @@
     "rollup": "^2.8.2"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": "^16.0.0"
   },
   "files": [
     "lib"
@@ -55,6 +55,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "eslint . && jest",
+    "prepare": "yarn build",
     "pretest": "yarn build"
   },
   "engines": {
