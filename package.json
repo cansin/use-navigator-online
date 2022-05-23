@@ -43,7 +43,7 @@
     "rollup": "^2.8.2"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": ">=16"
   },
   "files": [
     "lib"
@@ -52,13 +52,13 @@
   "module": "lib/index.esm.js",
   "browser": "lib/index.umd.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.js --watch",
     "test": "eslint . && jest",
     "prepare": "yarn build",
     "pretest": "yarn build"
   },
   "engines": {
-    "node": ">=12.16.3"
+    "node": ">=14"
   }
 }
