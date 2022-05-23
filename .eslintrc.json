@@ -6,8 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
-    "prettier/react",
     "plugin:import/errors"
   ],
   "overrides": [
@@ -16,7 +16,7 @@
       "env": { "jest": true }
     }
   ],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -24,7 +24,6 @@
       "jsx": true
     }
   },
-  "plugins": ["react-hooks"],
   "rules": {
     "import/order": ["error", { "newlines-between": "always" }],
     "react-hooks/rules-of-hooks": "error",

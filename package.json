@@ -25,18 +25,18 @@
   "homepage": "https://github.com/cansin/use-navigator-online#readme",
   "devDependencies": {
     "@babel/core": "^7.18.0",
+    "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.18.0",
     "@babel/preset-react": "^7.17.12",
     "@rollup/plugin-babel": "^5.3.1",
-    "babel-eslint": "^10.1.0",
     "eslint": "^8.16.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-rollup": "2.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "prettier": "^2.6.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -48,6 +48,9 @@
   "files": [
     "lib"
   ],
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "browser": "lib/index.umd.js",
