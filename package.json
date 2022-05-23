@@ -1,28 +1,44 @@
 {
   "name": "use-navigator-online",
   "version": "3.2.2",
-  "description": "React Hooks to detect when your browser is online/offline.",
   "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cansin/use-navigator-online.git"
-  },
+  "description": "React Hooks to detect when your browser is online/offline.",
   "keywords": [
     "navigator",
     "window.navigator",
     "react",
     "react-hooks"
   ],
+  "homepage": "https://github.com/cansin/use-navigator-online#readme",
+  "bugs": {
+    "url": "https://github.com/cansin/use-navigator-online/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cansin/use-navigator-online.git"
+  },
+  "license": "MIT",
   "author": {
     "name": "Cansin Yildiz",
     "email": "cansinyildiz@gmail.com",
     "url": "https://www.cansinyildiz.com/"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cansin/use-navigator-online/issues"
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --config rollup.config.js --watch",
+    "prepare": "npm run build",
+    "pretest": "npm run build",
+    "test": "eslint . && jest"
   },
-  "homepage": "https://github.com/cansin/use-navigator-online#readme",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.0",
     "@babel/eslint-parser": "^7.17.0",
@@ -44,22 +60,6 @@
   },
   "peerDependencies": {
     "react": ">=16"
-  },
-  "files": [
-    "lib"
-  ],
-  "jest": {
-    "testEnvironment": "jsdom"
-  },
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.esm.js",
-  "browser": "lib/index.umd.js",
-  "scripts": {
-    "build": "rollup --config rollup.config.js",
-    "dev": "rollup --config rollup.config.js --watch",
-    "test": "eslint . && jest",
-    "prepare": "npm run build",
-    "pretest": "npm run build"
   },
   "engines": {
     "node": ">=14"
