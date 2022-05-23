@@ -12,7 +12,7 @@ React Hooks to detect when your browser is online/offline using
 ## Install
 
 ```bash
-yarn add use-navigator-online
+npm install use-navigator-online --save
 ```
 
 ## Basic Usage
