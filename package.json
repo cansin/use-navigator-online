@@ -58,8 +58,8 @@
     "build": "rollup --config rollup.config.js",
     "dev": "rollup --config rollup.config.js --watch",
     "test": "eslint . && jest",
-    "prepare": "npm build",
-    "pretest": "npm build"
+    "prepare": "npm run build",
+    "pretest": "npm run build"
   },
   "engines": {
     "node": ">=14"
