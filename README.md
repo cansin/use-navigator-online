@@ -1,6 +1,6 @@
 # use-navigator-online
-[![tests](https://github.com/cansin/use-navigator-online/actions/workflows/tests.yml/badge.svg)]()
-[![codeql](https://github.com/cansin/use-navigator-online/actions/workflows/codeql-analysis.yml/badge.svg)]()
+[![tests](https://github.com/cansin/use-navigator-online/actions/workflows/tests.yml/badge.svg)](https://github.com/cansin/use-navigator-online/actions/workflows/tests.yml)
+[![codeql](https://github.com/cansin/use-navigator-online/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/cansin/use-navigator-online/actions/workflows/codeql-analysis.yml)
 [![size](https://img.shields.io/bundlephobia/minzip/use-navigator-online)](https://bundlephobia.com/result?p=use-navigator-online)
 [![dependencies](https://img.shields.io/librariesio/release/npm/use-navigator-online)](https://libraries.io/npm/use-navigator-online)
 [![downloads](https://img.shields.io/npm/dm/use-navigator-online)](https://www.npmjs.com/package/use-navigator-online)
